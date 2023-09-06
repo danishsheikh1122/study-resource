@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./icon.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Study Rsource</title>
+</head>
+<div id="popup" class="popup-container">
+    <!-- Pop-up content -->
+    <div class="popup-content">
+        <h1>Read Once</h1>
+        <p>Welcome to our demo platform, where we offer a taste of what our premium service has to offer. While our demo
+            provides limited resources, it serves as a sneak peek into the world of knowledge and education that awaits
+            you with our premium subscription.
+        <p>
+
+            In our premium service, you'll gain access to an extensive library of over 500+ multiple-choice questions
+            (MCQs) covering a wide range of subjects. These MCQs are meticulously crafted to help you master your
+            subjects and excel in your studies. Our premium subscription also includes access to comprehensive lectures
+            and additional learning materials that will further enhance your educational journey.
+        </p>
+        <p>
+
+            With a premium subscription, you'll unlock a wealth of knowledge and resources that will empower you to
+            achieve your academic and career goals. Don't miss out on the opportunity to take your learning to the next
+            level. Upgrade to premium today and embark on a path to academic excellence!</p>
+        </p>
+        <button id="closePopup">Close</button>
+    </div>
+</div>
+<img src="logo.png" alt="Image not found" width="100px" height="100px" id="img">
+
+<body>
+
+    <p>Here You Will Get Previous Year Msbte Question Papers And MCQs.</p>
+    <h1>Select Your Course</h1>
+    <div>
+
+        <Button id="CO" onclick="copage()">Comuter</Button>
+
+        <Button id="CI" onclick="cipage()">Civil</Button>
+    </div>
+    <div>
+
+        <Button id="ME" onclick="mepage()">Mechanical</Button>
+
+        <Button id="EE" onclick="eepage()">Electrical</Button>
+    </div>
+    <div>
+        <Button id="pz" onclick="pzpage()">Premium zone</Button>
+        <h4>In premium mode you will get all subjects exclusive video lectures and end sem mcq which will definately
+            come in exams
+
+        </h4>
+            <marquee direction="right" behavior="alternate" style="border:BLACK 2px SOLID"> Note:Premium mode contains
+                all the resources for 3 year(Sem 5 and Sem 6) of Computer Science
+            </marquee>
+            <h5>This site is under development so only 3 year(Sem 5 and Sem 6) of Computer Science resources are
+                available</h5>
+    </div>
+    <div>
+        Developed By Danish Sheikh
+        <br>
+        Contact me-sheikhsk1122@gmail.com
+    </div>
+</body>
+<script>
+    function copage() {
+        window.location.href = "cosem.html"
+    }
+    function cipage() {
+        window.location.href = "cisem.html"
+    }
+    function mepage() {
+        window.location.href = "mesem.html"
+    }
+    function eepage() {
+        window.location.href = "eesem.html"
+    }
+    function pzpage() {
+        window.location.href = "pzsem.html"
+    }
+
+    // JavaScript to automatically open the pop-up when the page loads
+    window.onload = function () {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'flex'; // Display the pop-up
+    };
+
+    // JavaScript to close the pop-up when the "Close" button is clicked
+    const closePopupButton = document.getElementById('closePopup');
+    closePopupButton.addEventListener('click', () => {
+        const popup = document.getElementById('popup');
+        popup.style.display = 'none'; // Hide the pop-up
+    }); F
+
+</script>
+
+</html>
